@@ -46,7 +46,8 @@ class ComplexShapes : Drawable() {
             // Draws quarter moon
             moveTo(100f, 800f)
             addArc(100f, 800f, 600f, 1_300f, 90f, -180f)
-            quadTo(450f, 1_050f, 350f, 1_303f)
+            quadTo(450f, 1_050f, 350f, 1_300f)
+            close()
         }
 
         canvas.drawPath(path, paint)
